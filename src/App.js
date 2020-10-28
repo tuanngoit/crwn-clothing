@@ -5,7 +5,7 @@ import HomePage from './pages/homepage/homepage.component';
 
 import './App.css';
 
-const HatsPage = props => (
+const HatsPage = () => (
   <div>
     <h1>HATS PAGE</h1>
   </div>
@@ -13,9 +13,9 @@ const HatsPage = props => (
 
 function App() {
   return (
-    <div className='App'>
+    <div>
       <Switch>
-        <Route exact path='/a/b/c/' component={HomePage} />
+        <Route exact path='/' component={HomePage} />
         <Route path='/hats' component={HatsPage} />
       </Switch>
     </div>
