@@ -1,8 +1,8 @@
-import HomePage from './pages/homepage/homepage.component';
+// import HomePage from './pages/homepage/homepage.component';
 import {Switch, Route, Link} from 'react-router-dom';
 import './App.css';
 
-const HomePage1 = props => {
+const HomePage = props => {
   console.log(props);
   return (
     <div>
@@ -37,7 +37,7 @@ function App() {
   return (
     <div className='App'>
       <Switch>
-        <Route exact path='/' component={HomePage1} />
+        <Route exact path='/' component={HomePage} />
         <Route exact path='/a/b/topics' component={TopicsList} />
         <Route path='/a/b/topics/:topicId' component={TopicDetail} />
       </Switch>
